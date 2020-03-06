@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>vue-project</title>
+  <link rel="stylesheet"
+        href="css/reset.css">
+  <link rel="stylesheet"
+        href="css/style.css">
+  <link rel="stylesheet"
+        href="./fonts/stylesheet.css">
+</head>
+
+<body>
+
+
+  <!--  vue form start-->
+
+
+  <div id="app"></div>
+
+
+  <!--  vue form end-->
+
+
+
+  <div id='main'>
+    <script src="/dist/build.js"></script>
+
+    <input type="checkbox"
+           id="nav-toggle"
+           hidden>
+
+    <nav class="nav">
+
+      <div class="nav_menu_list">
+        <div class="nav_li_first">
+          <p>Какие преимущества</p>
+        </div>
+        <div class="nav_li_second">
+          <p>Что вы получаете</p>
+        </div>
+        <div class="nav_li_third">
+          <p>Еще сюрпризы</p>
+        </div>
+        <div class="nav_li_fourth"><a class="nav_li_a"
+             href="#" onclick="showForm()">Оформить карту</a></div>
+        <script>
+            function showForm() {
+                document.getElementById("app").style.display = 'block';
+                document.getElementById("main").style.display = 'none';
+            }
+        </script>
+      </div>
+
+      <div class="nav_bottom">
+        <p class="nav_bottom_p">По России</p>
+        <p class="nav_bottom_h">8 800 950 6570</p>
+        <p class="nav_bottom_p">По Миру</p>
+        <p class="nav_bottom_h">8 800 950 6570</p>
+      </div>
+
+    </nav>
+
+    <main role="main">
+      <article>
+
+
+        <div class="container">
+
+
+          <!--    header start-->
+
+
+          <div class="header">
+            <label for="nav-toggle"
+                   class="nav-toggle"
+                   onclick></label>
+            <span class="bank_logo"><img src="./img/bank_logo.png"
+                   alt=""></span>
+          </div>
+
+          <!--    header end-->
+
+
+
+          <!--    intro start-->
+
+          <div class="intro">
+
+            <div class="wrapper">
+
+              <div class="intro_text_subtext">
+                <div class="intro_title1">
+                  Твоя премиум
+                </div>
+                <div class="intro_text_columns">
+                  <div class="intro_title2">
+                    карта
+                  </div>
+                  <div class="intro_second_text">
+                    Лучшая карта для
+                    любителей путешествий
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="credit_card">
+              <img src="./img/credit_card.png"
+                   alt="credit_card">
+            </div>
+
+            <div class="wrapper">
+
+              <div class="intro_texts1">
+
+                <div class="text_subtext">
+                  <p class="intro_text">11%</p>
+                  <p class="intro_subtext1">
+                    Вернем
+                    за покупки
+                    милями
+                  </p>
+                </div>
+
+                <div class="text_subtext">
+                  <p class="intro_text">0%</p>
+                  <p class="intro_subtext2">
+                    Бесплатное
+                    снятие наличных
+                    по всему миру
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="intro_texts2">
+
+                <div class="text_subtext">
+                  <p class="intro_text">7%</p>
+                  <p class="intro_subtext3">
+                    До 7%
+                    на остаток
+                    по счету
+                  </p>
+                </div>
+
+                <div class="text_subtext">
+                  <p class="intro_text">0р</p>
+                  <p class="intro_subtext4">
+                    Бесплатное
+                    годовое обслуживание
+                  </p>
+                </div>
+
+              </div>
+
+              <button class="order_now"
+                      onclick="showForm()">Заказать сейчас</button>
+              <script>
+                function showForm() {
+                  document.getElementById("app").style.display = 'block';
+                  document.getElementById("main").style.display = 'none';
+                }
+              </script>
+
+            </div>
+
+          </div>
+
+          <!--    intro end-->
+
+
+
+          <!--    card_plus start-->
+
+
+          <div class="card_plus">
+
+
+            <div class="card_plus_main_texts">
+              <div class="card_plus_main_text">Путешествие мечты начинается с CARD PLUS</div>
+              <div class="card_plus_subtext">
+                Мы продумали каждую мелочь. Владельцы CARD PLUS получают особый
+                пакет привилегий, необходимый для любого путешествия
+              </div>
+            </div>
+
+            <div class="card_plus_texts">
+
+              <div class="card_plus_text">
+                <div class="card_plus_pic">
+                  <img src="./img/Vector1.png"
+                       alt="first picture"
+                       class="card_plus_vector1">
+                </div>
+                <h3 class="card_plus_h_text1">
+                  Билеты любых авиакомпаний
+                </h3>
+                <p class="card_plus_p_text1">
+                  Предложения от 300+ авиакомпаний, 185+ lowcost перевозчиков, чартеры от 60 крупных
+                  российскихтуроператоров
+                </p>
+              </div>
+
+              <div class="card_plus_text">
+                <div class="card_plus_pic">
+                  <img src="./img/Vector2.png"
+                       alt="second picture"
+                       class="card_plus_vector1">
+                </div>
+                <h3 class="card_plus_h_text2">
+                  Мили больше не сгорают
+                </h3>
+                <p class="card_plus_p_text2">
+                  Мили, накопленные при оплате картой AlfaTravel, не сгорают и остаются на вашем счете, пока вы не
+                  решите
+                  их потратить
+                </p>
+              </div>
+
+              <div class="card_plus_text">
+                <div class="card_plus_pic">
+                  <img src="./img/Vector3.png"
+                       alt="third picture"
+                       class="card_plus_vector1">
+                </div>
+                <h3 class="card_plus_h_text3">
+                  Продвинутая страховка – бесплатно
+                </h3>
+                <p class="card_plus_p_text3">
+                  Расширенная страховка для всей семьи с учетом экстремальных видов спорта и алкоголя
+                </p>
+              </div>
+
+              <div class="card_plus_text">
+                <div class="card_plus_pic">
+                  <img src="./img/Vector4.png"
+                       alt="fourth picture"
+                       class="card_plus_vector1">
+                </div>
+                <h3 class="card_plus_h_text4">
+                  Доступ к счетам в разных валютах
+                </h3>
+                <p class="card_plus_p_text4">
+                  Текущие счета в рублях, долларах США, евро, английских фунтах стерлингов и швейцарских франках
+                  открываются в любой момент
+                </p>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <!--    card_plus end-->
+
+
+
+          <!--    main_div_3 start-->
+
+          <div class="main_div_3">
+
+
+            <div class="main_div_3_main_text">
+              Мы позаботились, чтобы вы получили
+            </div>
+
+
+            <div class="main_div_3_first_3_blocks">
+
+              <div class="main_div_3_1_block">
+                <div class="main_div_3_1_pic">
+                  <img src="./img/div_3_1.png"
+                       alt="first div_3 picture"
+                       class="1_div_3_picture">
+                </div>
+                <h3 class="main_div_3_1_h_text">
+                  Бесплатный безлимитный интернет в роуминге
+                </h3>
+
+                <div class="main_div_3_1_block_1_string">
+                  <img src="./img/megafon.png"
+                       alt="">
+                  <img src="./img/TELE2.png"
+                       alt="">
+                </div>
+
+                <div class="main_div_3_1_block_2_string">
+                  <img src="./img/MTC.png"
+                       alt="">
+                  <img src="./img/bilain.png"
+                       alt="">
+                </div>
+
+              </div>
+
+              <div class="main_div_3_2_block">
+                <div class="main_div_3_2_pic">
+                  <img src="./img/div_3_2.png"
+                       alt="second div_3 picture"
+                       class="2_div_3_picture">
+                </div>
+                <h3 class="main_div_3_2_h_text">
+                  Бесплатная упаковка багажа
+                </h3>
+                <p class="main_div_3_2_p_text">
+                  Держатели карт Visa Signature могут упаковать багаж в крупных аэропортах России
+                </p>
+              </div>
+
+              <div class="main_div_3_3_block">
+                <div class="main_div_3_3_pic">
+                  <img src="./img/div_3_3.png"
+                       alt="third div_3 picture"
+                       class="3_div_3_picture">
+                </div>
+                <h3 class="main_div_3_3_h_text">
+                  Бесплатный доступ в приложении App In The Air
+                </h3>
+                <p class="main_div_3_3_p_text">
+                  Бесплатная премиум подписка при покупке авиабилетов на travel.alfabank.ru
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="main_div_3_second_3_blocks">
+
+              <div class="main_div_3_4_block">
+
+                <div class="main_div_3_4_pic">
+                  <img src="./img/div_3_4.png"
+                       alt="fourth div_3 picture"
+                       class="3_div_4_picture">
+                  <h3 class="main_div_3_4_h_text">
+                    Такси бизнес-класса со скидкой 20%
+                  </h3>
+                  <div class="main_div_3_4_block_string">
+                    <img src="./img/wheely.png"
+                         alt=""
+                         class="div_3_4_picture_1_icon">
+                    <img src="./img/gett.png"
+                         alt=""
+                         class="div_3_4_picture_2_icon">
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="main_div_3_5_block">
+                <div class="main_div_3_5_pic">
+                  <img src="./img/div_3_5.png"
+                       alt="fifth div_3 picture"
+                       class="5_div_3_picture">
+                </div>
+                <h3 class="main_div_3_5_h_text">
+                  Скидка в ресторанах Novikov Group в аэропорту Шереметьево
+                </h3>
+              </div>
+
+              <div class="main_div_3_6_block">
+                <div class="main_div_3_6_pic">
+                  <img src="./img/div_3_6.png"
+                       alt="six div_3 picture"
+                       class="6_div_3_picture">
+                </div>
+                <h3 class="main_div_3_6_h_text">
+                  Доступ в бизнес-залы Priority Pass по всему миру
+                </h3>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+
+
+          <!--    main_div_3 end-->
+
+
+
+          <!--    personal_assistant start-->
+
+
+
+          <div class="personal_assistant">
+
+            <div class="personal_assistant_main_sub_texts">
+              <h2 class="personal_assistant_main_text">
+                Персональный помощник
+              </h2>
+              <p class="personal_assistant_subtext">Бесплатно для владельцев <span class="card_plus_div_4">CARD
+                  PLUS</span></p>
+            </div>
+
+            <div class="personal_assistant_main_picture_texts">
+
+              <div class="personal_assistant_main_picture"><img src="./img/div4_picture.png"
+                     alt="div_4_main_picture"
+                     class="div_4_big_picture"></div>
+
+              <div class="personal_assistant_subtexts">
+
+                <div class="personal_assistant_icon_subtext1">
+                  <div>
+                    <img class="div4_icon1"
+                         src="./img/div4_icon1.png"
+                         alt="">
+                  </div>
+                  <div class="div_4_icon_1_text">Организует встречи, найдет гидов и переводчиков</div>
+                </div>
+
+                <div class="personal_assistant_icon_subtext2">
+                  <div>
+                    <img src="./img/div4_icon2.png"
+                         alt="">
+                  </div>
+                  <div class="div_4_icon_2_text">Спланирует поездку по самым интересным местам вашего отдыха</div>
+                </div>
+
+                <div class="personal_assistant_icon_subtext3">
+                  <div>
+                    <img src="./img/div4_icon3.png"
+                         alt="">
+                  </div>
+                  <div class="div_4_icon_3_text">Достанет билеты на мероприятия, даже если их уже нет в продаже</div>
+                </div>
+
+                <div class="personal_assistant_icon_subtext4">
+                  <div>
+                    <img src="./img/div4_icon4.png"
+                         alt="">
+                  </div>
+                  <div class="div_4_icon_4_text">Закажет столик в ресторане, клубе или кафе</div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!--    personal_assistant end-->
+
+
+
+
+          <!--    div5 start-->
+
+          <div class="div5">
+
+
+            <div class="div5_main_text">
+              Оформите свою новую карту для путешествий
+            </div>
+
+            <div class="div5_texts">
+
+              <div class="div5_text1">
+                <span class="div5_text_h1">до</span>
+                <span class="div5_text_h2">11%</span>
+                <p class="div5_text1_p">Милями за услуги, оплаченные на travel.ru</p>
+              </div>
+
+
+              <div class="div5_text2">
+                <span class="div5_text_h1">до</span>
+                <span class="div5_text_h2">11%</span>
+                <p class="div5_text2_p">Милями за любые покупки по карте</p>
+              </div>
+
+
+              <div class="div5_text3">
+                <span class="div5_text_h2">1 = 1</span>
+                <p class="div5_text3_p">Оплата милями билетов любых авиакомпаний по курсу 1 миля = 1Р</p>
+              </div>
+
+            </div>
+
+
+
+            <div class="div5_card_texts">
+
+              <div class="div5_card"><img src="./img/credit_card2.png"
+                     alt=""></div>
+
+              <div class="div5_texts_button">
+
+                <div class="div5_credit_debit">
+                  <span class="div5_credit_card">Кредитная карта</span>
+                  <span class="div_5_debit_card">Дебетовая карта</span>
+                </div>
+
+                <div class="div5_button_class">
+                  <button class="div5_button" onclick="showForm()">Отправить заявку</button>
+                  <script>
+                      function showForm() {
+                          document.getElementById("app").style.display = 'block';
+                          document.getElementById("main").style.display = 'none';
+                      }
+                  </script>
+                </div>
+
+                <div class="div5_all_bottom_text">
+
+                  <div class="div5_after_button_text1">
+                    <p>Стоимость карты в год (руб.)</p>
+                    <br>
+                    <p>Приветственные мили (шт.)</p>
+                    <p>Мили за покупки</p>
+                    <br>
+                    <p class="div5_bottom_text">Все подробности</p>
+                  </div>
+
+                  <div class="div5_after_button_text2">
+                    <p>6 490 (без пакета услуг),</p>
+                    <p>4 990 (с пакетом услуг)</p>
+                    <p>1 000</p>
+                    <p>5%</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--    div5 end-->
+
+
+
+
+
+          <!--    footer start-->
+
+
+
+          <div class="footer">
+
+            <div class="footer_column1">
+              <div class="intro_logo">
+                <img src="./img/bank_logo.png"
+                     alt="bank_logo">
+                <p class="footer_after_logo">АО «Кредит Европа Банк»</p>
+              </div>
+            </div>
+
+            <div class="footer_column2">
+              <p class="footer_text">О банке</p>
+              <p class="footer_text">Офисы и банкоматы</p>
+              <p class="footer_text">Новости</p>
+              <p class="footer_text">Вакансии</p>
+              <p class="footer_text">Реализуемое имущество</p>
+            </div>
+
+            <div class="footer_column3">
+              <p class="footer_text">Раскрытие информации</p>
+              <p class="footer_text">Ставки по вкладам</p>
+              <p class="footer_text">Условия и тарифы</p>
+              <p class="footer_text">Корпоративное управление</p>
+              <p class="footer_text">Карта сайта</p>
+            </div>
+
+            <div class="footer_column4">
+              <p class="footer_text">По России</p>
+              <p class="footer_numbers">8 800 950 6570</p>
+              <p class="footer_text">По Миру</p>
+              <p class="footer_numbers">8 800 950 6570</p>
+            </div>
+
+
+          </div>
+
+
+          <!--    footer end-->
+
+        </div>
+
+      </article>
+    </main>
+  </div>
+</body>
+
+</html>
