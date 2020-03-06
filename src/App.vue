@@ -68,7 +68,7 @@
         <div>
           <button
             class="submit"
-            @click="sendForm"
+            @click="submitForm"
             :disabled="!formIsValid"
             :class="{ '-valid': formIsValid }"
           >Заказать сейчас</button>
@@ -152,20 +152,18 @@ export default {
       };
     },
 
-     sendForm: function() {
-      document.getElementById("app").getElementsByClassName("fullForm")[0].style.display = "none";
-      document.getElementById("app").getElementsByClassName("message")[0].style.display = "block";
-      this.form = {
-        name: "",
-        email: "",
-        phone: "",
-        country: null
-      };
-    },
 
     submitForm() {
       if (this.formIsValid) {
         console.log("Form Submitted", this.form);
+          document.getElementById("app").getElementsByClassName("fullForm")[0].style.display = "none";
+          document.getElementById("app").getElementsByClassName("message")[0].style.display = "block";
+          this.form = {
+              name: "",
+              email: "",
+              phone: "",
+              country: null
+          };
       } else {
         console.log("Invalid form");
       }
